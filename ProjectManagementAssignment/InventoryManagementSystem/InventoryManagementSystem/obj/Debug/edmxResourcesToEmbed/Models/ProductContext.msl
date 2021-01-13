@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InventoryMgtModelStoreContainer" CdmEntityContainer="InventoryMgtEntities">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="InventoryMgtModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SDesc" ColumnName="SDesc" />
+          <ScalarProperty Name="LDesc" ColumnName="LDesc" />
+          <ScalarProperty Name="SImg" ColumnName="SImg" />
+          <ScalarProperty Name="LImg" ColumnName="LImg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,82 @@
+﻿@model InventoryManagementSystem.Models.Product
+
+@{
+    ViewBag.Title = "ProductDetail";
+}
+
+<h2>Product Detail</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SImg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LImg)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "UpdateProduct", "Product", new { id = Model.ID }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Cancel", "DisplayProduct", "Product", new { @class = "btn btn-danger" });
+</p>
